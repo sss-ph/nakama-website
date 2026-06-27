@@ -970,8 +970,18 @@ main { padding-top: var(--navbar-h); }
 }
 .dpopup-btn-buy:hover { background: var(--gradient-h); }
 @media (max-width: 600px) {
-  .diagram-vehicle-container.mode-car  { width: 95%; }
-  .diagram-vehicle-container.mode-moto { width: 90%; }
+  .diagram-toggle {
+    position: relative;   /* เปลี่ยนจาก static เป็น relative */
+    margin: 0 auto 26px;
+    justify-content: center;
+    z-index: 100;         /* สูงพอที่จะอยู่บนทุกอย่าง */
+    pointer-events: auto;
+  }
+
+  /* ตรวจสอบว่า overlay ไม่บัง toggle */
+  .diagram-teaser-overlay {
+    top: 60px;            /* ดัน overlay ลงมาให้พ้น toggle */
+  }
 }
 
 
