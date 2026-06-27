@@ -984,7 +984,7 @@ main { padding-top: var(--navbar-h); }
   }
   .diagram-toggle {
     position: relative;
-    margin: 0 auto 12px;  /* auto ซ้ายขวา = center */
+    margin: 0 auto 50px;  /* auto ซ้ายขวา = center */
     left: 0;              /* ← เพิ่ม reset ค่า left เดิมที่อาจค้างอยู่ */
   }
 }
